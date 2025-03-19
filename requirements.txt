@@ -1,0 +1,4 @@
+selenium
+requests
+behave
+allure-behave

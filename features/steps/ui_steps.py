@@ -1,7 +1,6 @@
 from behave import given, when, then
-from pages.login_page import LoginPage
-from utils.config import Config
-from utils.logger import logger
+from pages import LoginPage
+from utils import Config, logger
 
 
 @given("I open the login page")

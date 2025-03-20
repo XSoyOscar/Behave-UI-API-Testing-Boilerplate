@@ -1,5 +1,5 @@
 import requests
-from utils.config import Config
+from utils import Config
 
 
 class BaseAPI:

@@ -1,5 +1,5 @@
 from behave import given, when, then
-from api_clients.users_api import UsersAPI
+from api_clients import UsersAPI
 
 
 @given("I have the users API")

@@ -1,8 +1,8 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
-from utils.logger import logger
+from selenium.common.exceptions import TimeoutException
+from utils import logger
 
 
 class BasePage:
@@ -60,8 +60,8 @@ class BasePage:
             try:
                 if clear_first:
                     element.clear()
-                    element.send_keys(Keys.CONTROL + "a")  # Selecciona todo el texto
-                    element.send_keys(Keys.BACKSPACE)  # Borra el contenido
+                    element.send_keys(Keys.CONTROL + "a")
+                    element.send_keys(Keys.BACKSPACE)
                 element.send_keys(text)
             except Exception as e:
                 logger.error(f"Failed to send keys to {locator}: {e}")

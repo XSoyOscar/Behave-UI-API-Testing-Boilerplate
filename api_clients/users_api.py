@@ -1,4 +1,4 @@
-from .base_api import BaseAPI
+from api_clients.base_api import BaseAPI
 
 
 class UsersAPI(BaseAPI):

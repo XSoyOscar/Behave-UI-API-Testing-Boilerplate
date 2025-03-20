@@ -1,6 +1,5 @@
 from selenium import webdriver
-from utils.config import Config
-from utils.logger import logger
+from utils import Config, logger
 import allure
 
 
